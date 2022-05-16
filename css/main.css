@@ -136,5 +136,10 @@ ul.i-am-list li {
 ul.i-am-list li:before {
   content: '';
   position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(".../assets/bullet.svg");
+  background-size: contain;
+  margin-right: .5em;
 }
 /*# sourceMappingURL=main.css.map */
