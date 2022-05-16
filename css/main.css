@@ -122,6 +122,12 @@ section.who-am-i a {
   text-decoration: none;
 }
 
+section.who-am-i h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
+
 ul.i-am-list {
   margin: 0;
   padding-left: .1em;
@@ -131,15 +137,63 @@ ul.i-am-list li {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
+  position: relative;
 }
 
 ul.i-am-list li:before {
   content: '';
+  left: -2em;
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(".../assets/bullet.svg");
+  background-image: url("../assets/bullet.svg");
   background-size: contain;
   margin-right: .5em;
+}
+
+.who-am-i img {
+  display: none;
+}
+
+.teachings-section {
+  color: white;
+  background: var(--primary-color);
+}
+
+.teachings-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.teachings-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 4em;
+  margin-top: 0;
+}
+
+.teachings-section li {
+  background: #006BD6;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.teachings-section li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006bd6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.checkout-projects-section {
+  text-align: center;
+}
+
+.checkout-projects-section a {
+  color: gray;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
