@@ -1,0 +1,139 @@
+:root {
+    --primary-color:#007AF3
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span {
+            color: var(--primary-color);
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+    
+    .mobile-menu {
+        cursor: pointer;
+    }
+    
+}
+
+a {
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero{
+    text-align: center;
+}
+
+.left-col {
+    .subhead{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: grey;
+        letter-spacing: .3em;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+        margin-bottom: 0.3em;
+    }
+
+    .discord-cta {
+        background: #5865F2;
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.1em;
+        border-radius: 3em;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0.5em;
+    }
+
+    .github-cta {
+        background: #030303;
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.1em;
+        border-radius: 3em;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0.5em;
+    }
+
+    .linkedin-cta {
+        background: #0072B1;
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.1em;
+        border-radius: 3em;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+.hero-img {
+    width:70%;
+    margin-top:1em;
+}
+
+section.who-am-i {
+    background: #20272E;
+    color:white;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+ul.i-am-list {
+    margin: 0;
+    padding-left: .1em;
+    
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+
+        &:before {
+            content: '';
+            position: absolute;
+        }
+    }
+}
