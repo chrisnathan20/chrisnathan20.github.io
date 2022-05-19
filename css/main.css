@@ -189,6 +189,10 @@ ul.i-am-list li:before {
   margin-top: -4.5em;
 }
 
+.teachings-section li a {
+  text-decoration: underline;
+}
+
 .teachings-section li h2 {
   margin: 0.5em 0 0 0;
 }
