@@ -50,6 +50,7 @@ section {
 }
 
 .hero{
+    margin-top: 0;
     text-align: center;
 }
 
@@ -64,7 +65,7 @@ section {
     h1 {
         font-size: 3.5em;
         line-height: 1.3em;
-        margin-top: .2em;
+        margin-top: .1em;
         margin-bottom: 0.3em;
     }
 
@@ -101,6 +102,7 @@ section {
         border-radius: 3em;
         font-weight: bold;
         display: inline-block;
+        margin: 0.5em;
     }
 }
 
@@ -128,6 +130,8 @@ section.who-am-i {
 ul.i-am-list {
     margin: 0;
     padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     
     li {
         font-size: 1.1em;
@@ -244,5 +248,103 @@ nav {
 
     &:hover {
         transform: scale(1.1);
+    }
+}
+
+//Tablet display has width of 768px
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        
+        ul {
+            display: flex;
+        }
+    
+        a {
+            color: black;
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+            margin-left: 5em;
+        }
+
+        li.current a{
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col {
+            margin: 3em 3em 0 5em;
+
+            h1 {
+                font-size: 4em;
+                width: 90%;
+            }
+        }
+    }
+
+    .hero-img{
+        width: 30%;
+        height: 30%;
+        margin-right: 8em;
+    }
+
+    .i-am-header{
+        margin-left: 2em;
+        
+    }
+
+    ul.i-am-list{
+        display: block;
+        margin-left: 5em;
+
+        li {
+            font-size: 1.4em;
+
+            &:before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .who-am-i {
+        
     }
 }
